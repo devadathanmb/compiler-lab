@@ -1,16 +1,12 @@
 %{
-#include<stdio.h>
-#include<stdlib.h>
-int yyerror();
+  #include<stdio.h>
+  #include<stdlib.h>
+  int yyerror();
 %}
 %token letter digit underscore
 %%
-
-variable : letter alphanumeric
-;
-alphanumeric : letter alphanumeric | digit alphanumeric | underscore alphanumeric | letter | digit | underscore
-;
-
+variable : letter alphanumeric;
+alphanumeric : letter alphanumeric | digit alphanumeric | underscore alphanumeric | letter | digit | underscore;
 %%
 
 int main(){

@@ -1,9 +1,0 @@
-#define MAX 10;
-int things = 10;
-char life = 1;
-
-/* this is a commment */
-
-printf("Linux for the win");
-
-life > 10;
